@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="59dp"
+        android:layout_height="64dp"
+        app:circularflow_radiusInDP="@string/common_google_play_services_enable_button"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <SearchView
+        android:layout_width="185dp"
+        android:layout_height="41dp"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="39dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

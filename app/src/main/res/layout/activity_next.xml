@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/welcome2"
+    >
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="191dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp"
+        android:text="Back"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/back60"
+
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="10dp"
+        android:background="#30111111"
+        android:padding="15dp"
+        android:hint="Location"
+        android:textColorHint="@color/purple_200"
+
+        ></EditText>
+
+    <EditText
+        android:id="@+id/postalcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/postal"
+        android:layout_marginRight="20dp"
+        android:drawablePadding="10dp"
+        android:hint="Postal Code"
+        android:textColorHint="@color/purple_200"
+
+        ></EditText>
+
+    <EditText
+        android:id="@+id/landmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postalcode"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/landmark"
+        android:layout_marginTop="20px"
+        android:drawablePadding="10dp"
+        android:hint="Land Mark eg. Chandigarh University"
+        android:textColorHint="@color/purple_200"
+
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/landmark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20px"
+        android:hint="District"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/phone"
+        android:textColorHint="@color/purple_200"
+
+        >
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Signup"
+        android:text="Sign Up"
+        android:background="@color/teal_700"
+        android:layout_below="@id/district"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="already have an account?"
+        android:layout_below="@id/Signup"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginpage"
+        android:text="login"
+        android:layout_below="@id/Signup"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="290dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Welcome to DABA"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"></TextView>
+
+
+</RelativeLayout>
