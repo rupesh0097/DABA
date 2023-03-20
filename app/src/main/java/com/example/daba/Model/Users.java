@@ -1,4 +1,4 @@
-package com.example.daba;
+package com.example.daba.Model;
 
 public class Users {
 

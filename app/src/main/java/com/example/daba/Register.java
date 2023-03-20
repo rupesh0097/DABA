@@ -18,6 +18,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.regex.Pattern;
 
@@ -36,6 +37,7 @@ public class Register extends AppCompatActivity {
                     ".{4,}" +               //at least 4 characters
                     "$");
 
+    // Checking PhoneNO pattern
     private static final Pattern PHONE_PATTERN =
             Pattern.compile("^[+]{1}(?:[0-9\\-\\(\\)\\/\\.]\\s?){6,15}[0-9]{1}$");
 
@@ -43,6 +45,7 @@ public class Register extends AppCompatActivity {
     // Create object of DatabaseReference Class to access firebase Realtime Database
     DatabaseReference reference;
     FirebaseDatabase rootNode;
+   // FirebaseFirestore db;
 
     // Variables
     EditText email, phoneNO, password,confirmPassword;
@@ -148,9 +151,7 @@ public class Register extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                startActivity(new Intent(Register.this, Login.class));
-
+                startActivity(new Intent(Register.this, Next.class));
             }
         });
 

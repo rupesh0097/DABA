@@ -86,7 +86,7 @@ public class Login extends AppCompatActivity {
                                 }
                             }
                             else{
-                                Toast.makeText(Login.this, "Wrogn Password", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login.this, "Wrong Password", Toast.LENGTH_SHORT).show();
                             } // close of if
                         }
 

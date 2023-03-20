@@ -96,18 +96,17 @@ android:background="@drawable/welcome2"
     android:textSize="20dp"
     ></TextView>
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/loginpage"
-    android:text="login"
-    android:layout_below="@id/register"
-    android:layout_marginTop="10dp"
-    android:layout_marginLeft="290dp"
-    android:textSize="20dp"
-    android:textStyle="bold"
-    android:textColor="@color/black"
-    ></TextView>
+    <TextView
+        android:id="@+id/loginpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="10dp"
+        android:text="login"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
 
     <TextView
         android:layout_width="match_parent"
